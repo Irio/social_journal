@@ -8,7 +8,26 @@
 </head>
 <body>
 
-<%= yield %>
+<div class="container-narrow">
+
+  <div class="masthead">
+    <ul class="nav nav-pills pull-right">
+      <li class="active"><%= link_to 'Home', root_path %></a></li>
+    </ul>
+    <h3 class="muted">Jornalismo Ativo</h3>
+  </div>
+
+  <hr>
+
+  <%= yield %>
+
+  <hr>
+
+  <div class="footer">
+    <p>&copy; Jornalismo Ativo 2013</p>
+  </div>
+
+</div>
 
 </body>
 </html>
