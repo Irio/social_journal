@@ -1,8 +1,8 @@
 <div class="row-fluid">
   <div class="span12">
     <%- @posts.each do |post| %>
-      <h4 class="posts-title"><%= link_to post[:title], '#' %></h4>
-      <p class="posts"><%= truncate post[:content], length: 320 %></p>
+      <h4 class="posts-title"><%= link_to post.title, post %></h4>
+      <p class="posts"><%= truncate post.content, length: 320 %></p>
     <%- end %>
   </div>
 </div>
